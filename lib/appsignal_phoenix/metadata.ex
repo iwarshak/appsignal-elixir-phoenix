@@ -24,14 +24,14 @@ if Code.ensure_loaded?(Phoenix.LiveView) do
   defimpl Appsignal.Metadata, for: Phoenix.LiveView.Socket do
     def metadata(%Phoenix.LiveView.Socket{
           id: id,
-          root_view: root_view,
+          # root_view: root_view,
           view: view,
           endpoint: endpoint,
           router: router
         }) do
       %{
         "id" => id,
-        "root_view" => root_view,
+        # "root_view" => root_view,
         "view" => view,
         "endpoint" => endpoint,
         "router" => router
